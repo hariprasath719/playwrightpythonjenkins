@@ -25,7 +25,7 @@ def test_compare_title(browser_context):
     print(f"Actual Title: {actual_title}")
 
     # Define the expected title
-    expected_title = 'Example Domain'  # Change this to your expected title
+    expected_title = 'Google'  # Change this to your expected title
 
     # Compare the actual title with the expected title
     assert actual_title == expected_title, f"Title mismatch! Expected: '{expected_title}', but got: '{actual_title}'"
