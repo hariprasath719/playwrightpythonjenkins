@@ -17,7 +17,7 @@ def test_compare_title(browser_context):
     page = browser_context.new_page()
 
     # Navigate to the desired URL
-    url = 'https://example.com'  # Change this to your desired URL
+    url = 'https://google.com'  # Change this to your desired URL
     page.goto(url)
 
     # Get the actual title of the page
