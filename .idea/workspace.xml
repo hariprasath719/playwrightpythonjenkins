@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61db9fbc-81aa-4e73-8c4c-1e6edafc82f5" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/test_py/compare_title.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_py/compare_title.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/playwright.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/playwright.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
