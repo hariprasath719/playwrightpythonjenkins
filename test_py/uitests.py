@@ -5,7 +5,7 @@ from playwright.sync_api import sync_playwright
 @pytest.fixture(scope="session")
 def browser():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False, slow_mo=500)
+        browser = p.chromium.launch(headless=False, slow_mo=1500)
         yield browser
         browser.close()
 
@@ -40,6 +40,13 @@ def test_checkbox_is_checked(page):
     checked_checkbox = page.get_by_role("checkbox", name="Checked checkbox")
     assert checked_checkbox.is_checked()
 
+
+def test_move_to_element(page):
+    range_input = page.locator("#customRange1")
+    range_input.scroll_into_view_if_needed()
+    page.evaluate("document.getElementById('customRange1').value = 15")
+    assert range_input.input_value() == "15", "The range input value was not set correctly"
+    page.screenshot(path="screenshot.png")
 
 
 
